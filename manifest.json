@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+
+    "name": "百度的正确食用方式",
+    "description": "本扩展屏蔽了百度提供的无用功能(例如搜索), 只留下其核心业务, 力图提供最清爽的百度使用体验。",
+    "version": "233", "author": "sqd",
+    "icons": { "16": "images/icon16.png",
+        "48": "images/icon48.png",
+        "128": "images/icon128.png" },
+
+    "web_accessible_resources": ["fixed.html"],
+    "browser_action": { "default_icon":
+        {
+            "19": "images/icon_fixed19.png",
+            "38": "images/icon_fixed38.png"
+        }
+    },
+    "background": {"scripts": ["background.js"], "persistent": true },
+    "permissions": ["webRequest", "webRequestBlocking", "tabs", "*://*.baidu.com/*"]
+}
